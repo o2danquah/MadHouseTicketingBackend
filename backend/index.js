@@ -15,11 +15,14 @@ app.use(bodyParser.urlencoded({extended: false}))
 dotenv.config({path: "./config/config.env"});
 
 
-db();
+
  app.use(express.json());
- app.use("/", (req, res) => {
-    res.send("Server is running");
- })
+//  app.use("/", (req, res) => {
+//     
+//     res.send("Server is running");
+//  })
+
+db();
  app.post("/Ticket", async (req, res) => {
     try {
         console.log(req.body);

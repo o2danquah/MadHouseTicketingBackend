@@ -7,7 +7,7 @@ import PaystackPop from "@paystack/inline-js"
 import axios from "axios"
 import {useForm} from "react-hook-form";
 
- 
+
 
 function Home () {
     const [fullname, setFullname] = useState("")
