@@ -27,6 +27,10 @@ db();
         console.log("Error Message")
         res.status(200).json("Problem with database")
     }
+
+ app.use("/", (req, res) => {
+    res.send("Server is running");
+ })   
    
 
  })
