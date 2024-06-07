@@ -2,7 +2,6 @@ import {React, useState} from 'react'
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
-import Stack from '@mui/material/Stack';
 import ConfirmationNumberIcon from '@mui/icons-material/ConfirmationNumber';
 import PaystackPop from "@paystack/inline-js"
 import axios from "axios"
@@ -37,7 +36,7 @@ function Home () {
     
                 onSuccess(transaction){
                     let reference = `${transaction.reference}`;
-                    axios.post("http://localhost:3000/Ticket", {fullname, reference, email, amount, phonenumber}).then((res) => {
+                    axios.post("https://https://mad-house-ticketing-server.vercel.app/Ticket", {fullname, reference, email, amount, phonenumber}).then((res) => {
                         console.log(res)
                     }).catch((err)=>{ 
                         console.log(err)
@@ -65,12 +64,7 @@ function Home () {
   
 
 
- const Submit = (event) => {
-    event.preventDefault();
-    
-    
 
- }
 
   return (
     <>
