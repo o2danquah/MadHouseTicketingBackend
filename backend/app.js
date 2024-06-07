@@ -1,7 +1,6 @@
 const express = require("express");
 const db = require("./config/db");
 const dotenv = require("dotenv");
-const payment =  require('./routes/payment.route');
 const Payment = require("./models/payment")
 const bodyParser = require("body-parser");
 const cors = require("cors");
@@ -34,11 +33,9 @@ db();
  
 
 
-app.use("/", payment)
-
-const port = process.env.PORT;
 
 
-app.listen(port, () => {
-    console.log(`server is working on Port: ${port}`)
+
+app.listen(3000, () => {
+    console.log(`server is working on Port 5000 `)
 })
