@@ -1,0 +1,101 @@
+body{
+  background-color: 151515;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+
+.header {
+  transition: all 0.5s;
+  z-index: 997;
+  background-color: #000;
+  height: 70px;
+}
+
+.header .logo {
+  transition: 0.3s;
+}
+
+.header .logo img {
+  max-height: 40px;
+  margin-right: 8px;
+}
+
+.header .logo h1 {
+  font-size: 32px;
+  margin: 0;
+  font-weight: 400;
+  color: #fff;
+  font-family: var(--font-secondary);
+}
+
+.header .logo i {
+  font-size: 32px;
+  margin-right: 8px;
+  color: #FED049;
+  line-height: 0;
+}
+
+@media (max-width: 575px) {
+  .header .logo h1 {
+    font-size: 26px;
+  }
+
+  .header .logo i {
+    font-size: 24px;
+  }
+}
+
+.header .header-social-links {
+ padding: 10px;
+ margin-right: 20px;
+}
+
+.header .header-social-links a {
+  color: rgba(255, 255, 255, 0.5);
+  padding-left: 15px;
+  display: inline-block;
+  line-height: 0px;
+  transition: 0.3s;
+  font-size: 16px;
+}
+
+.header .header-social-links a:hover {
+  color: #FED049;
+}
+
+@media (max-width: 575px) {
+  .header .header-social-links a {
+    padding-left: 5px;
+  }
+}
+
+
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
