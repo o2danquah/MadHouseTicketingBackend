@@ -10,7 +10,7 @@ function NavBar ()  {
   <div className="container-fluid d-flex align-items-center justify-content-between p-0">
     <a href="index.html" className="logo d-flex align-items-center">
       {/* Uncomment the line below if you also wish to use an image logo */}
-       <img src="../public/bulldog.svg" alt />
+       <img src="/bulldog.svg" alt />
 
       <h1>MADHOUSE</h1>
     </a>

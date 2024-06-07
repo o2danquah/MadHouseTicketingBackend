@@ -36,7 +36,7 @@ function Home () {
     
                 onSuccess(transaction){
                     let reference = `${transaction.reference}`;
-                    axios.post("https://https://mad-house-ticketing-server.vercel.app/Ticket", {fullname, reference, email, amount, phonenumber}).then((res) => {
+                    axios.post("https://mad-house-ticketing-server.vercel.app/Ticket", {fullname, reference, email, amount, phonenumber}).then((res) => {
                         console.log(res)
                     }).catch((err)=>{ 
                         console.log(err)
