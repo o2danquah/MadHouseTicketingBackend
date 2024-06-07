@@ -17,6 +17,9 @@ dotenv.config({path: "./config/config.env"});
 
 db();
  app.use(express.json());
+ app.use("/", (req, res) => {
+    res.send("Server is running");
+ })
  app.post("/Ticket", async (req, res) => {
     try {
         console.log(req.body);
@@ -28,9 +31,7 @@ db();
         res.status(200).json("Problem with database")
     }
 
- app.use("/", (req, res) => {
-    res.send("Server is running");
- })   
+   
    
 
  })
