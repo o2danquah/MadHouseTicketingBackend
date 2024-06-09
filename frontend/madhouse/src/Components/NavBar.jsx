@@ -16,10 +16,9 @@ function NavBar ()  {
     </a>
     
     <div className="header-social-links d-flex">
-      <a href="https://twitter.com/02danquah" className="twitter"><i className="bi bi-x" /></a>
-      <a href="#" className="instagram"><i className="bi bi-instagram" /></a>
-      <a href="https://github.com/o2danquah" className="github"><i className="bi bi-github" /></a>
-      <a href="https://www.linkedin.com/in/kwasi-otu-danquah-02danquah" className="linkedin"><i className="bi bi-linkedin" /></a>
+      <a href="https://wa.me/0551874252" className="phone"><i className="bi bi-phone" /></a>
+      <a href="0557290175" className="instagram"><i className="bi bi-whatsapp" /></a>
+     
     </div>
     {/* <i className="mobile-nav-toggle mobile-nav-show bi bi-list" />
     <i className="mobile-nav-toggle mobile-nav-hide d-none bi bi-x" /> */}

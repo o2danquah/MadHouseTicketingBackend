@@ -9,6 +9,18 @@ body{
   text-align: center;
 }
 
+#errors-info{
+  color: red;
+  font-style: italic;
+  font-size: small;
+}
+
+.form h3{
+  font-family: "Libre Barcode 128 Text", system-ui;
+  font-size: large;
+  font-size: 70px;
+  font-style: normal;
+}
 
 .header {
   transition: all 0.5s;
@@ -95,6 +107,33 @@ body{
 .card {
   padding: 2em;
 }
+/* 
+.modal .overlay{
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  position: fixed;
+}
+
+.overlay{
+  background: rgba(49, 49, 49, 0.8);
+}
+
+.modal {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: #fff;
+  padding: 14px;
+  line-height: 1.4;
+  max-width: 600px;
+  min-width: 300px;
+} */
+
 
 .read-the-docs {
   color: #888;
