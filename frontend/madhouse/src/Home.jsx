@@ -36,7 +36,7 @@ function Home () {
             
                 key: "pk_live_06f1c4249dc2edcecbd72e8505f17c069eae4add",
                 email,
-                amount: amount * 100,
+                amount: 30 * 100,
     
                 onSuccess(transaction){
                     let reference = `${transaction.reference}`;
