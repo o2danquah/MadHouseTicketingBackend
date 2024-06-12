@@ -34,7 +34,7 @@ function Home () {
           
             paystack.newTransaction({
             
-                key: "pk_test_d85db65eb3bf360fa0fa5e18906368bc69469a5c",
+                key: "pk_live_06f1c4249dc2edcecbd72e8505f17c069eae4add",
                 email,
                 amount: amount * 100,
     
