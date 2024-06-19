@@ -20,7 +20,7 @@ function Home () {
     const {register, handleSubmit, formState: {errors}, getValues} = useForm();
     const [visible, setVisible] = useState(false);
     const [ticketNo, setticketNo] = useState("");
-
+    const urllink = "https://mad-house.vercel.app"
 
     const onSubmit = (data) => {
        setFullname(getValues("fullname"))
@@ -36,12 +36,11 @@ function Home () {
             
                 key: "pk_live_06f1c4249dc2edcecbd72e8505f17c069eae4add",
                 email,
-                amount: 30 * 100,
+                amount: (amount * 30) * 100,
     
                 onSuccess(transaction){
                     let reference = `${transaction.reference}`;
                     if(reference == null){
-                        console.log("notify failed")
 
                     }
                     else{                
@@ -51,10 +50,19 @@ function Home () {
                     
                     axios.post("https://mad-house-ticketing-server.vercel.app/Ticket", {fullname, reference, email, amount, phonenumber}).then((res) => {
                         console.log(res)
+                        window.location.href = urllink;
                     }).catch((err)=>{ 
                         console.log(err)
                     })   
+                },
+                onCancel(){
+                    window.location.href = urllink;
+                    return toast("Leaving without your ticket? :(")
+                    
                 }
+                
+
+                
             })
             
     }
@@ -104,11 +112,9 @@ function Home () {
 </Box>
 
 <br></br>
-<Button variant="contained" endIcon={<ConfirmationNumberIcon/>} style={{zIndex:"1"}} >
-    
-   <button style={{backgroundColor:"#1976d2", border: "0px",paddingLeft:"0px", paddingRight: "0px", color:"white"}}>
-   Get Ticket
-   </button>
+<Button variant="contained" type='submit' endIcon={<ConfirmationNumberIcon/>} style={{zIndex:"1"}} >
+    Get Ticket
+  
 </Button>
 
 
