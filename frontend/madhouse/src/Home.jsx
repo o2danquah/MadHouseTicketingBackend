@@ -56,7 +56,7 @@ function Home () {
                     })   
                 },
                 onCancel(){
-                    window.location.href = urllink;
+                    
                     return toast("Leaving without your ticket? :(")
                     
                 }
